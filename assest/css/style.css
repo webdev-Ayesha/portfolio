@@ -1,0 +1,76 @@
+:root {
+    --primary-color: #6366f1;
+    --light-bg: #f8fafc;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    color: #1e293b;
+}
+
+.text-primary { color: var(--primary-color) !important; }
+.btn-primary { background-color: var(--primary-color); border: none; }
+
+
+.main-profile-img {
+    width: 380px;
+    height: 380px;
+    object-fit: cover;
+    background: #e2e8f0;
+}
+
+
+.skill-box {
+    transition: 0.3s;
+    background: white;
+}
+.skill-box:hover {
+    transform: translateY(-10px);
+    border-color: var(--primary-color) !important;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+
+.nav-link {
+    font-weight: 500;
+    color: #64748b !important;
+}
+.nav-link.active, .nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+
+.form-control {
+    background-color: #f1f5f9;
+    border: none;
+}
+.form-control:focus {
+    background-color: #fff;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+}
+
+.main-profile-img {
+    width: 450px; /* Size adjust kora hoyeche */
+    height: 350px;
+    object-fit: cover; /* Jate chobi-ta chapa na hoye jay */
+   
+    background: #f1f5f9;
+}
+
+
+
+.about-img {
+    width: 100%;
+    max-height: 450px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .main-profile-img {
+        width: 250px;
+        height: 250px;
+    }
+}
